@@ -33,23 +33,30 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-    id: 'services',
+    id: 'game',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Snake',
+    headline: 'Play a simple snake game!',
+    description: 'Use the arrows to move the snake and try to catch as many fruits as you can!',
+    dark: true,
+    primary: true,
+    darkText: false,
+};
+export const homeObjFour = {
+    id: 'questions',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'Here you can access the code for my website.',
     headline: 'Á eftir að ákveða',
     description: 'Á eftir að ákveða',
-    buttonLabel: 'Kannski, kannski ekki ?',
-    imgStart: false,
-    img: '/images/profile.jpg',
-    alt: 'ProfilePic',
     dark: true,
     primary: true,
     darkText: false,
 };
-
-export const homeObjFour = {
+/*export const homeObjFour = {
     id: 'signin',
     lightBg: false,
     lightText: true,
@@ -64,4 +71,4 @@ export const homeObjFour = {
     dark: true,
     primary: true,
     darkText: false,
-};
+};*/
