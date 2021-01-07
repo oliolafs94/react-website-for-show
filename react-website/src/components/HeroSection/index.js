@@ -20,7 +20,7 @@ const HeroSection = () => {
                 <HeroH1>My React Website</HeroH1>
                 <HeroP>by Óli Ólafsson</HeroP>
                 <HeroBtnWrapper>
-                    <Button to="signup" onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}
                     primary="true"
                     dark="true"
                     >Get started {hover ? <ArrowForward /> : <ArrowRight />}</Button>

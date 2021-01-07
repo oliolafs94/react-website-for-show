@@ -16,10 +16,10 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-    id: 'discover',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    id: 'resume',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'Cock and balls torture',
     headline: 'Á eftir að ákveða',
     description: 'Á eftir að ákveða',
@@ -46,10 +46,10 @@ export const homeObjThree = {
 };
 export const homeObjFour = {
     id: 'questions',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
-    topLine: 'Here you can access the code for my website.',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Question time!',
     headline: 'Á eftir að ákveða',
     description: 'Á eftir að ákveða',
     dark: true,

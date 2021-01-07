@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '../ButtonElements';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, BtnWrap, ImgWrap, Img, TopLine, Heading } from './InfoElements';
 import SnakeGame from '../../Snake/SnakeGame';
+import QuestionGame from '../../Questions/QuestionGame';
 
 export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, img, alt}) => {
     return (
@@ -49,6 +50,32 @@ export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline
                         </Column1>
                         <Column2>
                             <SnakeGame/>
+                        </Column2>
+                    </InfoRow>
+                </InfoWrapper>
+            </InfoContainer>
+        </>
+    )
+}
+
+export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel}) => {
+    return (
+        <>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
+                        <Column1>
+                        <TextWrapper>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle lightText={lightText}>{description}</Subtitle>
+                            <BtnWrap>
+                                <Button to="home">{ButtonLabel}</Button>
+                            </BtnWrap>
+                        </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <QuestionGame/>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
