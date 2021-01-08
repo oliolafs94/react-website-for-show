@@ -1,6 +1,7 @@
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
+    lightTopText: true, 
     lightText: true,
     lightTextDesc: true,
     topLine: 'About Me',
@@ -18,9 +19,10 @@ export const homeObjOne = {
 export const homeObjTwo = {
     id: 'resume',
     lightBg: true,
+    lightTopText: false, 
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Cock and balls torture',
+    topLine: 'My not so impressive resume',
     headline: 'Á eftir að ákveða',
     description: 'Á eftir að ákveða',
     buttonLabel: 'Kannski, kannski ekki ?',
@@ -29,12 +31,13 @@ export const homeObjTwo = {
     alt: 'ProfilePic',
     dark: true,
     primary: true,
-    darkText: false,
+    darkText: true,
 };
 
 export const homeObjThree = {
     id: 'game',
     lightBg: false,
+    lightTopText: true, 
     lightText: true,
     lightTextDesc: true,
     topLine: 'Snake',
@@ -47,14 +50,15 @@ export const homeObjThree = {
 export const homeObjFour = {
     id: 'questions',
     lightBg: true,
+    lightTopText: false, 
     lightText: false,
     lightTextDesc: false,
     topLine: 'Question time!',
-    headline: 'Á eftir að ákveða',
-    description: 'Á eftir að ákveða',
+    headline: 'Questions',
+    description: 'Answer these four questions if you like.',
     dark: true,
     primary: true,
-    darkText: false,
+    darkText: true,
 };
 /*export const homeObjFour = {
     id: 'signin',

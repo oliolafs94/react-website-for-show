@@ -1,10 +1,9 @@
 import React from 'react'
-import { Button } from '../ButtonElements';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, BtnWrap, ImgWrap, Img, TopLine, Heading } from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, ImgWrap, Img, TopLine, Heading } from './InfoElements';
 import SnakeGame from '../../Snake/SnakeGame';
-import QuestionGame from '../../Questions/QuestionGame';
+import Questions from '../../Questions';
 
-export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, img, alt}) => {
+export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, img, alt, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -12,12 +11,9 @@ export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline,
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
+                            <TopLine lightTopText={lightTopText}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
-                            <BtnWrap>
-                                <Button to="home">{ButtonLabel}</Button>
-                            </BtnWrap>
                         </TextWrapper>
                         </Column1>
                         <Column2>
@@ -32,7 +28,7 @@ export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline,
     )
 };
 
-export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel}) => {
+export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -40,12 +36,9 @@ export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
+                            <TopLine lightTopText={lightTopText}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
-                            <BtnWrap>
-                                <Button to="home">{ButtonLabel}</Button>
-                            </BtnWrap>
                         </TextWrapper>
                         </Column1>
                         <Column2>
@@ -58,7 +51,7 @@ export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline
     )
 }
 
-export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel}) => {
+export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -66,16 +59,13 @@ export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline
                     <InfoRow imgStart={imgStart}>
                         <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
+                            <TopLine lightTopText={lightTopText}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle lightText={lightText}>{description}</Subtitle>
-                            <BtnWrap>
-                                <Button to="home">{ButtonLabel}</Button>
-                            </BtnWrap>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                         </TextWrapper>
                         </Column1>
                         <Column2>
-                            <QuestionGame/>
+                            <Questions/>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
