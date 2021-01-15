@@ -60,19 +60,13 @@ export const homeObjFour = {
     primary: true,
     darkText: true,
 };
-/*export const homeObjFour = {
-    id: 'signin',
+export const homeObjFive = {
+    id: 'Cats',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Simple snake game',
-    headline: 'Play a game!',
-    description: 'Á eftir að ákveða',
-    buttonLabel: 'Kannski, kannski ekki ?',
     imgStart: false,
-    img: '/images/profile.jpg',
-    alt: 'ProfilePic',
     dark: true,
     primary: true,
     darkText: false,
-};*/
+};

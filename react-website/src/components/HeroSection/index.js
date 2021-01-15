@@ -3,6 +3,9 @@ import Video from '../../videos/video.mp4';
 import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 import { Button } from '../ButtonElements';
 
+
+//Todo: Cool looking Hero section, with simple text explaining
+// and button that does somehing(simple basics for show).
 const HeroSection = () => {
 
     const [hover, setHover] =  useState(false);

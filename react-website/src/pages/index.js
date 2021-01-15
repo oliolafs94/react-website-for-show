@@ -3,8 +3,8 @@ import Sidebar from '../components/Sidebar';
 import Footer from '../components//Footer';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
-import {InfoSection, InfoSection2, InfoSection3} from '../components/InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/Data';
+import {InfoSection, InfoSection2, InfoSection3, InfoSection4 } from '../components/InfoSection';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour, homeObjFive } from '../components/InfoSection/Data';
 
 const Home = () => {
 
@@ -23,6 +23,7 @@ const Home = () => {
             <InfoSection {...homeObjTwo}/>
             <InfoSection2 {...homeObjThree}/>
             <InfoSection3 {...homeObjFour}/>
+            <InfoSection4 {...homeObjFive}/>
             <Footer />
         </>
     );

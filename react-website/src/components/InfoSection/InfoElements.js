@@ -32,6 +32,14 @@ export const InfoRow = styled.div`
     }
 `;
 
+export const BigCol = styled.div`
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+
+`;
+
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;

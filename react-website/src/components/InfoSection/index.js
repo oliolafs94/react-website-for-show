@@ -1,7 +1,8 @@
 import React from 'react'
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, ImgWrap, Img, TopLine, Heading } from './InfoElements';
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, ImgWrap, Img, TopLine, Heading, BigCol } from './InfoElements';
 import SnakeGame from '../../Snake/SnakeGame';
 import Questions from '../../Questions';
+import Search from '../SearchComponent';
 
 export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, img, alt, lightTopText}) => {
     return (
@@ -69,6 +70,18 @@ export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
+            </InfoContainer>
+        </>
+    )
+}
+
+export const InfoSection4 = ({lightBg, id}) => {
+    return (
+        <>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <BigCol>
+                    <Search/>
+                </BigCol>
             </InfoContainer>
         </>
     )
