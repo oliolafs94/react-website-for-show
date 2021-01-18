@@ -5,9 +5,8 @@ export const homeObjOne = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'About Me',
-    headline: 'Á eftir að ákveða',
-    description: 'Á eftir að ákveða',
-    buttonLabel: 'Kannski, kannski ekki ?',
+    headline: 'Hi! My name is Óli Ólafsson.',
+    description: 'I am an energetic, creative individual who enjoys learning about new things and the ways it can be used to help people work more effectively. I graduated from Reykjavík University with a BS.c in Computer Science in 2018, and then I went on and took one year as a MS.c student. Ever since then I have been trying to expand my field in computer science, learning new things and going out of my comfort zone. I have taken online classes on Udemy in various topics, such as database studies, mobile app development, and machine learning. I’ve always been very ambitious, in sports and school and as an employee. I have a positive and contagious attitude, always been quick to adjust to new environment and love to work with others. I am innovative and happy to bring new ideas to the table. I truly believe that I will be a good addition and a valuable asset to your company. Have an amazing day!',
     imgStart: false,
     img: '/images/profile.jpg',
     alt: 'ProfilePic',
@@ -16,19 +15,18 @@ export const homeObjOne = {
     darkText: false,
 };
 
+
 export const homeObjTwo = {
     id: 'resume',
     lightBg: true,
     lightTopText: false, 
     lightText: false,
     lightTextDesc: false,
+    description: 'You can also view my other website resume here', 
     topLine: 'My not so impressive resume',
-    headline: 'Á eftir að ákveða',
-    description: 'Á eftir að ákveða',
-    buttonLabel: 'Kannski, kannski ekki ?',
     imgStart: false,
-    img: '/images/profile.jpg',
-    alt: 'ProfilePic',
+    img: '/images/resume.jpg',
+    alt: 'ResumePic',
     dark: true,
     primary: true,
     darkText: true,
@@ -61,7 +59,7 @@ export const homeObjFour = {
     darkText: true,
 };
 export const homeObjFive = {
-    id: 'Cats',
+    id: 'filtersearch',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -70,3 +68,4 @@ export const homeObjFive = {
     primary: true,
     darkText: false,
 };
+

@@ -24,6 +24,9 @@ const Navbar = ({ toggle }) => {
                         <NavItem>
                             <NavLinks to="questions">Questions</NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to="filtersearch">Filter Search</NavLinks>
+                        </NavItem>
                     </NavMenu>
                 </NavbarContainer>
             </Nav>

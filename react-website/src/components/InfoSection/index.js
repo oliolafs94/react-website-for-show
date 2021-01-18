@@ -1,35 +1,46 @@
-import React from 'react'
+import React from 'react';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Subtitle, ImgWrap, Img, TopLine, Heading, BigCol } from './InfoElements';
 import SnakeGame from '../../Snake/SnakeGame';
 import Questions from '../../Questions';
 import Search from '../SearchComponent';
+import '../../images/website.jpg';
+//import { Button } from '../ButtonElements';
 
-export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, img, alt, lightTopText}) => {
+export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, img, alt, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
                     <InfoRow imgStart={imgStart}>
                         <Column1>
+                            <br/>
+                            <br/>
+                            <br/>
                         <TextWrapper>
                             <TopLine lightTopText={lightTopText}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <a href="https://www.oliolafsson.net"> 
+                                    <div>Visit my other website resume here!</div>
+                                </a>
                         </TextWrapper>
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                            <Img src={img} alt={alt} />
+                                <Img src={img} alt={alt} />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
                 </InfoWrapper>
+                <br/>
+                <br/>
+                <br/>
             </InfoContainer>
         </>
     )
 };
 
-export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, lightTopText}) => {
+export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
@@ -52,7 +63,7 @@ export const InfoSection2 = ({lightBg, id,imgStart, topLine, lightText, headline
     )
 }
 
-export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, ButtonLabel, lightTopText}) => {
+export const InfoSection3 = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, lightTopText}) => {
     return (
         <>
             <InfoContainer lightBg={lightBg} id={id}>
