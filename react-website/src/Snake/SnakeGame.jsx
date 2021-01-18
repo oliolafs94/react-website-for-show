@@ -1,6 +1,7 @@
-import React from 'react'
-import './SnakeGame.css'
-import GameOver from './GameOver.jsx'
+import React from 'react';
+import './SnakeGame.css';
+import GameOver from './GameOver.jsx';
+import FirstGame from './FirstGame.jsx';
 
 class SnakeGame extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class SnakeGame extends React.Component {
       direction: 'right',
       directionChanged: false,
       isGameOver: false,
+      isFirstGame: true,
       snakeColor: this.props.snakeColor || this.getRandomColor(),
       appleColor: this.props.appleColor || this.getRandomColor(),
       score: 0,
@@ -86,7 +88,7 @@ class SnakeGame extends React.Component {
 
   gameLoop() {
     let timeoutId = setTimeout(() => {
-      if (!this.state.isGameOver) {
+      if (!this.state.isGameOver || !this.state.isFirstGame) {
         this.moveSnake()
         this.tryToEatSnake()
         this.tryToEatApple()
@@ -145,6 +147,7 @@ class SnakeGame extends React.Component {
       direction: 'right',
       directionChanged: false,
       isGameOver: false,
+      isFirstGame: false,
       gameLoopTimeout: 50,
       snakeColor: this.getRandomColor(),
       appleColor: this.getRandomColor(),
@@ -305,10 +308,14 @@ class SnakeGame extends React.Component {
   }
 
   handleKeyDown(event) {
+    if(this.state.isFirstGame && event.keyCode === 32) {
+      this.resetGame();
+      return;
+    }
     // if spacebar is pressed to run a new game
     if (this.state.isGameOver && event.keyCode === 32) {
-      this.resetGame()
-      return
+      this.resetGame();
+      return;
     }
 
     if (this.state.directionChanged) return
@@ -356,6 +363,15 @@ class SnakeGame extends React.Component {
   }
 
   render() {
+    // First game
+    if (this.state.isFirstGame) {
+      return(
+        <FirstGame 
+          width={this.state.width}
+          height={this.state.height}
+        />
+      )
+    }
     // Game over
     if (this.state.isGameOver) {
       return (
@@ -403,7 +419,7 @@ class SnakeGame extends React.Component {
           }}
         />
         <div id='Score' style={{ fontSize: this.state.width / 20 }}>
-          HIGH-SCORE: {this.state.highScore}&ensp;&ensp;&ensp;&ensp;SCORE:{' '}
+          HIGH-SCORE: {this.state.highScore}&ensp; | &ensp;SCORE:{' '}
           {this.state.score}
         </div>
       </div>

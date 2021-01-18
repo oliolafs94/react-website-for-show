@@ -3,6 +3,7 @@
 
 import CatBreed from './cat-breeds';
 import './search-style.css';
+import '../../images/active-search.png';
 
 import React, {Component} from 'react'
 
@@ -37,7 +38,7 @@ import React, {Component} from 'react'
 
 // export default SearchList
 
-import { Button, Input, Footer, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
+import { Card, CardBody } from 'mdbreact';
 
 
 class SearchList extends Component {
@@ -76,7 +77,7 @@ class SearchList extends Component {
                     <div className="row">
                         <div className="col"></div>
                         <div className="col">
-                            <Input className="input" icon="search" onChange={this.onchange} hint="Filter out cat breeds here"/>
+                            <input className="input" placeholder="Filter out cat breeds here" onChange={this.onchange}/>
                         </div>
                         <div className="col"></div>
                     </div>
