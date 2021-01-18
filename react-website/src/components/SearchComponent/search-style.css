@@ -29,3 +29,12 @@
     color: white;
     padding: 20px;
 }
+
+.img {
+    size: 50%;
+}
+
+.img-wrap {
+    display: "flex"; 
+    flex-wrap: "wrap";
+}
