@@ -3,7 +3,8 @@ import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Sub
 import SnakeGame from '../../Snake/SnakeGame';
 import Questions from '../../Questions';
 import Search from '../SearchComponent';
-import '../../images/website.jpg';
+import website from '../../images/website.jpg';
+import './InfoElements.css'
 //import { Button } from '../ButtonElements';
 
 export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline, darkText, description, img, alt, lightTopText}) => {
@@ -27,7 +28,7 @@ export const InfoSection = ({lightBg, id,imgStart, topLine, lightText, headline,
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={img} alt={alt} />
+                                <img className="website-img" src={website} alt="resume" />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

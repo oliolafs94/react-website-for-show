@@ -10,6 +10,11 @@
     justify-content: center;
 }
 
+.website-img {
+    width: 500px;
+    height: 300px;
+}
+
 /* .big-col {
     display: grid;
     width: fit-content;

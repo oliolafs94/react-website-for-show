@@ -308,13 +308,18 @@ class SnakeGame extends React.Component {
   }
 
   handleKeyDown(event) {
+    // if spacebar is pressed to run a new game
     if(this.state.isFirstGame && event.keyCode === 32) {
       this.resetGame();
+      event.stopPropagation();
+      event.preventDefault();
       return;
     }
-    // if spacebar is pressed to run a new game
+    // if spacebar is pressed to run a new game after game over
     if (this.state.isGameOver && event.keyCode === 32) {
       this.resetGame();
+      event.stopPropagation();
+      event.preventDefault();
       return;
     }
 
@@ -328,6 +333,8 @@ class SnakeGame extends React.Component {
       case 38:
       case 87:
         this.goUp()
+        event.stopPropagation();
+        event.preventDefault();
         break
       case 39:
       case 68:
@@ -336,6 +343,8 @@ class SnakeGame extends React.Component {
       case 40:
       case 83:
         this.goDown()
+        event.stopPropagation();
+        event.preventDefault();
         break
       default:
     }

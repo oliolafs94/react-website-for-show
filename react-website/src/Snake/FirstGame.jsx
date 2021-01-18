@@ -11,7 +11,7 @@ function FirstGame(props) {
       }}>
       <div id='FirstGame' style={{ fontSize: props.width / 15 }}>
         <div id='FirstGameText'>START A GAME!</div>
-        <div id='PressSpaceText'>Press Space to restart</div>
+        <div id='PressSpaceText'>Press Space to start</div>
       </div>
     </div>
   )
