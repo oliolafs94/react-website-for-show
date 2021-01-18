@@ -87,4 +87,15 @@ export const InfoSection4 = ({lightBg, id}) => {
     )
 }
 
+export const InfoSection5 = ({lightBg, id}) => {
+    return (
+        <>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <InfoWrapper>
+                </InfoWrapper>
+            </InfoContainer>
+        </>
+    )
+}
+
 //export default ( InfoSection, InfoSection2 )
